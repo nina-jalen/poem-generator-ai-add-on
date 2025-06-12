@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -21,6 +22,7 @@
             required
             autocomplete="off"
             class="instrucitons"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
@@ -35,7 +37,7 @@
           >open-sourced</a
         >
         and it is hosted on
-        <a href="poem-genetaror-ai-add-on.netlify.app" target="_blank">
+        <a href="https://poem-genetaror-ai-add-on.netlify.app/" target="_blank">
           Netlify
         </a>
       </footer>
