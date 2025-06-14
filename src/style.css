@@ -26,13 +26,23 @@ h1 {
 
 /* form */
 
-form {
-  padding: 30px;
+.form-container {
   background-color: whitesmoke;
-  box-shadow: 0 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 36px;
   border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 22px;
+}
+
+form {
   display: flex;
-  margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
 }
 
 .instrucitons {
@@ -67,8 +77,29 @@ form {
   box-shadow: 0 4px 30px rgba(65, 50, 100, 0.008);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+/* blink */
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
